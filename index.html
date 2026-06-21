@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gillian — Graphic Design &amp; UI/UX Portfolio</title>
+<meta name="description" content="Portfolio of Gillian, Creative Computing student specializing in graphic design and UI/UX prototyping.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ====================== NAV ====================== -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-mark">GA</a>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ====================== HERO ====================== -->
+<section class="hero" id="top">
+  <div class="hero-inner">
+    <p class="eyebrow">Graphic Design &amp; UI/UX</p>
+    <h1 class="hero-name">
+      Gillian<br><span class="hero-name-sub">Abraham</span>
+    </h1>
+    <div class="hero-rule" id="heroRule" aria-hidden="true"></div>
+    <p class="hero-tagline">
+      <!-- EDIT: write your own 1-line role statement here -->
+      I design interfaces and visuals that make complex things feel obvious.
+    </p>
+    <div class="hero-meta">
+      <span>Creative Computing — Bath Spa University, UAE</span>
+      <span class="hero-meta-dot">·</span>
+      <span>Seeking Graphic Design Internship</span>
+    </div>
+  </div>
+  <button class="scroll-cue" id="scrollCue" aria-label="Scroll to about section">
+    <span>Scroll</span>
+    <svg width="14" height="20" viewBox="0 0 14 20" fill="none"><path d="M7 1V19M7 19L1 13M7 19L13 13" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+</section>
+
+<!-- ====================== ABOUT ====================== -->
+<section class="about" id="about">
+  <div class="about-inner">
+    <p class="section-label">About</p>
+    <div class="about-grid">
+      <div class="about-photo-wrap">
+        <!-- EDIT: replace with your headshot. Recommended size ~480x600px (portrait) -->
+        <div class="about-photo placeholder-block">
+          <span>Your photo<br>480 × 600</span>
+        </div>
+      </div>
+      <div class="about-copy">
+        <!-- EDIT: replace this paragraph with your own bio -->
+        <p class="about-lead">
+          Write your bio here — who you are, what draws you to design, and what kind of
+          work you want to be doing next. Two to three sentences is plenty.
+        </p>
+        <p>
+          Add a second paragraph if useful: a bit about your process, the tools you reach for,
+          or what you're currently learning. Keep it conversational, not a list of buzzwords.
+        </p>
+
+        <div class="about-skills">
+          <p class="about-skills-label">Tools</p>
+          <ul class="skills-list">
+            <li>Figma</li>
+            <li>Illustrator</li>
+            <li>Photoshop</li>
+            <li>HTML / CSS</li>
+            <li>JavaScript</li>
+            <!-- EDIT: add/remove tools to match your actual skill set -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== WORK / PROJECTS ====================== -->
+<section class="work" id="work">
+  <div class="work-inner">
+    <p class="section-label">Selected Work</p>
+
+    <!-- PROJECT 1 -->
+    <article class="project" data-project="1">
+      <div class="project-text">
+        <h3 class="project-title">Project Title One</h3>
+        <p class="project-role">Brand Identity — Figma, Illustrator</p>
+        <p class="project-desc">
+          One or two sentences on the brief and what you delivered. Focus on the
+          problem you solved, not just a list of deliverables.
+        </p>
+        <a href="#" class="project-link">View case study →</a>
+      </div>
+      <div class="project-media">
+        <!-- EDIT: replace with project-1.jpg, recommended 1200x900px -->
+        <div class="placeholder-block project-image">
+          <span>project-1.jpg<br>1200 × 900</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- PROJECT 2 -->
+    <article class="project project-reverse" data-project="2">
+      <div class="project-text">
+        <h3 class="project-title">Project Title Two</h3>
+        <p class="project-role">UI/UX Prototype — Figma</p>
+        <p class="project-desc">
+          One or two sentences on the brief and what you delivered. Mention the
+          tools and your specific role if it was a group project.
+        </p>
+        <a href="#" class="project-link">View case study →</a>
+      </div>
+      <div class="project-media">
+        <!-- EDIT: replace with project-2.jpg, recommended 1200x900px -->
+        <div class="placeholder-block project-image">
+          <span>project-2.jpg<br>1200 × 900</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- PROJECT 3 -->
+    <article class="project" data-project="3">
+      <div class="project-text">
+        <h3 class="project-title">Project Title Three</h3>
+        <p class="project-role">Editorial / Print — Illustrator, InDesign</p>
+        <p class="project-desc">
+          One or two sentences on the brief and what you delivered. Keep it
+          specific: what was the constraint, what was the result.
+        </p>
+        <a href="#" class="project-link">View case study →</a>
+      </div>
+      <div class="project-media">
+        <!-- EDIT: replace with project-3.jpg, recommended 1200x900px -->
+        <div class="placeholder-block project-image">
+          <span>project-3.jpg<br>1200 × 900</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- PROJECT 4 -->
+    <article class="project project-reverse" data-project="4">
+      <div class="project-text">
+        <h3 class="project-title">Project Title Four</h3>
+        <p class="project-role">Front-End Build — HTML, CSS, JS</p>
+        <p class="project-desc">
+          One or two sentences on the brief and what you delivered. If it's a
+          live site, link it directly.
+        </p>
+        <a href="#" class="project-link">View case study →</a>
+      </div>
+      <div class="project-media">
+        <!-- EDIT: replace with project-4.jpg, recommended 1200x900px -->
+        <div class="placeholder-block project-image">
+          <span>project-4.jpg<br>1200 × 900</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Add project 5 / 6 by duplicating an .project article block above -->
+
+  </div>
+</section>
+
+<!-- ====================== CONTACT ====================== -->
+<section class="contact" id="contact">
+  <div class="contact-inner">
+    <p class="section-label section-label-light">Contact</p>
+    <h2 class="contact-headline">Let's talk about<br>your next project.</h2>
+    <div class="contact-links">
+      <!-- EDIT: update href values with your real details -->
+      <a href="mailto:youremail@example.com" class="contact-link">
+        <span>Email</span>
+        <strong>youremail@example.com</strong>
+      </a>
+      <a href="https://linkedin.com/in/yourprofile" class="contact-link" target="_blank" rel="noopener">
+        <span>LinkedIn</span>
+        <strong>linkedin.com/in/yourprofile</strong>
+      </a>
+      <a href="#" class="contact-link">
+        <span>Resume</span>
+        <strong>Download PDF</strong>
+      </a>
+    </div>
+  </div>
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Gillian Abraham. Built with care.</p>
+  </footer>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
