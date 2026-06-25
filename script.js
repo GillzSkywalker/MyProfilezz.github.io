@@ -60,3 +60,40 @@ if ('IntersectionObserver' in window) {
   // Fallback: just show everything if IntersectionObserver isn't supported
   projects.forEach((project) => project.classList.add('in-view'));
 }
+
+// ===========================================================
+// Featured gallery lightbox
+// ===========================================================
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightboxImg');
+const lightboxCaption = document.getElementById('lightboxCaption');
+const lightboxClose = document.getElementById('lightboxClose');
+const galleryFrames = document.querySelectorAll('.frame');
+
+if (lightbox && lightboxImg && lightboxCaption && lightboxClose && galleryFrames.length) {
+  const openLightbox = (img, title, meta) => {
+    lightboxImg.src = img.src;
+    lightboxImg.alt = img.alt;
+    lightboxCaption.textContent = `${title} — ${meta}`;
+    lightbox.setAttribute('aria-hidden', 'false');
+  };
+
+  const closeLightbox = () => lightbox.setAttribute('aria-hidden', 'true');
+
+  galleryFrames.forEach((frame) => {
+    frame.addEventListener('click', () => {
+      const img = frame.querySelector('img');
+      const title = frame.querySelector('.plaque-title')?.textContent || '';
+      const meta = frame.querySelector('.plaque-meta')?.textContent || '';
+      if (img) openLightbox(img, title, meta);
+    });
+  });
+
+  lightboxClose.addEventListener('click', closeLightbox);
+  lightbox.addEventListener('click', (event) => {
+    if (event.target === lightbox) closeLightbox();
+  });
+  window.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') closeLightbox();
+  });
+}

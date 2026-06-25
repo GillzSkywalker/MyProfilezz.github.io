@@ -3,12 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Other Featured works</title>
+    <title>Other Featured Works</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <header class="gallery-header">
+        <p class="eyebrow">Featured Projects</p>
+        <h1 class="gallery-title">More of my work</h1>
+        <p class="gallery-intro">A selection of side projects, photo edits, and poster designs that complement the main portfolio. Tap any frame to see it larger.</p>
+        <a href="index.html">← Back to portfolio</a>
+    </header>
+
+    <div class="rail-wrap" aria-hidden="true">
+        <div class="rail"></div>
+    </div>
+
+    <main class="wall" id="wall">
+        <figure class="frame" style="--wire-h: 64px; --tilt: -1.2deg;">
+            <span class="wire" style="height: var(--wire-h);" aria-hidden="true"></span>
+            <div class="mat">
+                <img src="swatchProject.png" alt="Poster design for a Swatch-inspired campaign" loading="lazy">
+            </div>
+            <figcaption class="plaque">
+                <span class="plaque-title">Swatch Poster Campaign</span>
+                <span class="plaque-meta">Digital illustration / school brief</span>
+            </figcaption>
+        </figure>
+
+        <figure class="frame" style="--wire-h: 96px; --tilt: 0.8deg;">
+            <span class="wire" style="height: var(--wire-h);" aria-hidden="true"></span>
+            <div class="mat">
+                <img src="motorPhotography.png" alt="Motorcycle photo edit with new background and lighting" loading="lazy">
+            </div>
+            <figcaption class="plaque">
+                <span class="plaque-title">Motorcycle Photo Edit</span>
+                <span class="plaque-meta">Photo editing / Visual storytelling</span>
+            </figcaption>
+        </figure>
+
+        <figure class="frame" style="--wire-h: 48px; --tilt: -0.5deg;">
+            <span class="wire" style="height: var(--wire-h);" aria-hidden="true"></span>
+            <div class="mat">
+                <img src="poster album.jpg" alt="Anime fandom poster layout with character illustration" loading="lazy">
+            </div>
+            <figcaption class="plaque">
+                <span class="plaque-title">Fandom Poster Prototype</span>
+                <span class="plaque-meta">Poster design / Photopea + PicsArt</span>
+            </figcaption>
+        </figure>
+
+        <figure class="frame" style="--wire-h: 80px; --tilt: 1.4deg;">
+            <span class="wire" style="height: var(--wire-h);" aria-hidden="true"></span>
+            <div class="mat">
+                <img src="car2.png" alt="Car photo with color change and photo enhancement" loading="lazy">
+            </div>
+            <figcaption class="plaque">
+                <span class="plaque-title">Car Color Change Design</span>
+                <span class="plaque-meta">Photoshop edit / realism study</span>
+            </figcaption>
+        </figure>
+
+        <figure class="frame" style="--wire-h: 56px; --tilt: -1.6deg;">
+            <span class="wire" style="height: var(--wire-h);" aria-hidden="true"></span>
+            <div class="mat">
+                <img src="graphicProject1.png" alt="Graphic design piece combining illustration and layout" loading="lazy">
+            </div>
+            <figcaption class="plaque">
+                <span class="plaque-title">Graphic Design Exploration</span>
+                <span class="plaque-meta">Layout / composition</span>
+            </figcaption>
+        </figure>
+
+        <figure class="frame" style="--wire-h: 72px; --tilt: 0.3deg;">
+            <span class="wire" style="height: var(--wire-h);" aria-hidden="true"></span>
+            <div class="mat">
+                <img src="merchandise.png" alt="Merchandise concept artwork displayed as a product mockup" loading="lazy">
+            </div>
+            <figcaption class="plaque">
+                <span class="plaque-title">Merchandise Concept</span>
+                <span class="plaque-meta">Branding / product visuals</span>
+            </figcaption>
+        </figure>
+    </main>
+
+    <!-- Lightbox: opens a frame full-size when clicked -->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+        <figure class="lightbox-figure">
+            <img id="lightboxImg" src="" alt="">
+            <figcaption id="lightboxCaption"></figcaption>
+        </figure>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
